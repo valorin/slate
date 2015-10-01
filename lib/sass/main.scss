@@ -84,12 +84,13 @@ select, input[type=time], input[type=date] {
 }
 
 input[type=date] {
-  direction: rtl;
+  text-align: right;
 }
 
 select {
   right: 30px;
   top: 14px;
+  text-align: right;
 }
 
 input[type=time] {

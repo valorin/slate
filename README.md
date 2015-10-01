@@ -114,7 +114,7 @@ Here is a list of the different components you can create with Slate.
     </label>
     <label class="item">
       Example Item
-      <select name="select-1" dir='rtl' class="item-select">
+      <select name="select-1" class="item-select">
         <option class="item-select-option">Both</option>
         <option class="item-select-option" selected>Major only</option>
         <option class="item-select-option">Minor only</option>

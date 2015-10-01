@@ -49,11 +49,12 @@ select, input[type=time], input[type=date] {
   background-color: #F7F7F7; }
 
 input[type=date] {
-  direction: rtl; }
+  text-align: right; }
 
 select {
   right: 30px;
-  top: 14px; }
+  top: 14px;
+  text-align: right; }
 
 input[type=time] {
   right: 10px !important; }

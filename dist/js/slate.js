@@ -228,7 +228,7 @@ var Zepto=function(){function L(t){return null==t?String(t):j[S.call(t)]||"objec
           var $current = $(this);
           var name = $current.attr('name');
 
-          $('a[name=' + name + ']').each(function(){
+          $('a[name="' + name + '"]').each(function(){
             $(this).removeClass('active');
           });
 
@@ -241,7 +241,7 @@ var Zepto=function(){function L(t){return null==t?String(t):j[S.call(t)]||"objec
       this.each(function() {
         var $slider = $(this);
         var name = $slider.attr('name');
-        var $input = $('input[name=' + name + '][class=item-input]');
+        var $input = $('input[name="' + name + '"][class=item-input]');
 
         $slider.on('input', function() {
           var $current = $(this);
