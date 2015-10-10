@@ -38,6 +38,13 @@ $border-radius:     5px;
           user-select: $type;
 }
 
+@mixin appearance($type) {
+  -webkit-appearance: $type;
+     -moz-appearance: $type;
+      -ms-appearance: $type;
+          appearance: $type;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,8 +72,13 @@ body, select, input[type=text], input[type=time], input[type=date] {
   font-weight: normal;
 }
 
-select, input[type=time], input[type=date] {
+select {
+  @include appearance(none);
+}
+input[type=time], input[type=date] {
   opacity: 0;
+}
+select, input[type=time], input[type=date] {
   border: none;
   position: absolute;
   top: 13px;
@@ -409,6 +421,7 @@ input[type=date] {
   color: white; 
   font-size: 0.8em;
   border: none;
+  @include appearance(none);
 }
 
 .item-input-button {
@@ -457,7 +470,7 @@ input[type=date] {
 .item-slider {
   position: relative;
   top: 8px;
-  opacity: 0;
+  @include appearance(none);
   height: 30px;
   width: 79%;
   overflow: hidden;
@@ -476,7 +489,7 @@ input[type=date] {
 }
 
 .item-slider::-webkit-slider-thumb {
-  opacity: 0;
+  @include appearance(none);
   position: relative;
   top: -13px;
   height: 28px;
